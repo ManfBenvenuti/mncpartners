@@ -1,10 +1,23 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass', '~> 3.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# Use sqlite3 for development and test
+# Foreman to access .env file in development phase
+group :development, :test do 
+	gem 'sqlite3'
+	gem 'foreman'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,6 +35,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# Email Form
+gem "mail_form", ">= 1.5.0"
+gem 'simple_form'
+gem 'bootstrap_form'
+
+# Devise
+gem 'devise', '~> 3.4.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

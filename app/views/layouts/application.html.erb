@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mncpartners</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Mncpartners</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
+	<body>
 
-</body>
+
+		<%= render 'layouts/header' %>
+
+		<%= yield %>
+
+		<%= link_to "Home", root_path %>
+		<%= link_to "Background", background_path %>
+		<%= link_to "What we do", what_we_do_path %>
+		<%= link_to "Contact Us", contacts_path %>
+
+	</body>
 </html>
