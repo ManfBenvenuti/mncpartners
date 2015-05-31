@@ -1,0 +1,258 @@
+
+// UNIVERSAL
+
+body { font-family: 'Raleway', sans-serif; background: url(bg2.png); font-size: 18px; color:rgb(47,64,82);}
+
+h1, h2, h3 {color:rgb(47,64,82);}
+
+
+.container {
+  background: #fff;
+  padding-left: 0px;
+  padding-right: 0px;}
+
+.center-heading {text-align:center;}
+
+.center-heading h2 {
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+} 
+
+.center-line {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  border-top: 1px solid #bbb;
+  /* border-bottom: 1px solid $skincolor; */
+  margin: auto;
+}
+
+#intro { 
+    background: url(parallax2.jpg) 50% 0% fixed no-repeat; 
+    height: auto;  
+    margin: 0 auto; 
+    color:#fff;
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 10px 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#intro .container {background:none;}
+#intro h2 {color:#fff;}
+
+#home { 
+    background: url(parallax3.jpg) 100% 0% fixed; 
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 10px 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#home .container {background:none;}
+#home h2, #home p {color:#fff;}
+
+// HEADER
+
+.nav {  margin-top: 25px;}
+.nav li {border-radius:none;}
+.nav li > a {color:#434a54;} 
+.nav li > a:hover {background:#fff; color:rgb(185,93,64); }
+.nav li.dropdown > a:hover, .nav .open > a {background:#fff; color:rgb(185,93,64); }
+
+.navbar-brand {width:200px; height:106px;}
+.menu-tgl {color: rgb(42,45,51);}
+a {color: rgb(42,45,51);}
+
+.carousel {font-family: 'Raleway', sans-serif; font-weight: 800; box-shadow: 0 10px 50px rgba(0,0,0,0.8);}
+#vider-element {background:#000;z-index:1;}
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.caption{z-index:1;position:absolute;left:0%;width:100%;display:block;color:#fff;padding:10px;font-size:27px;letter-spacing:0.1em;text-align:center;line-height:1.2;opacity:1;}
+
+
+// INDEX
+.featurette-heading {font-weight:800;}
+.subtitle {font-size:18px; font-weight:800;}
+
+// PAYOFF
+.payoff {margin-top:50px;}
+
+// TRITTICO
+.trittico {text-align:center; margin-top:50px; margin-bottom:50px;}
+
+
+// FUN FACTS
+.fun-facts > .container {text-align:center; background-color:#B95D40; color:#fff; padding-top:50px; padding-bottom:50px;}
+.facts-in h3 {color:#fff; font-family: 'Raleway', sans-serif; font-weight:800; font-size:50px; line-height: 24px; letter-spacing: normal; margin-bottom: 25px;}
+.facts-in h4 { color:#fff; font-family: 'Open Sans', sans-serif; font-weight:400; font-size:1.4em; line-height: 27px; letter-spacing:normal; text-transform: uppercase;}
+
+// PAGES
+
+.top-header {color:#2F4052;  text-align:left; height:89px; padding-left:15px; margin-top:20px;
+  background-image: url(shadow-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f6f6f6;
+  border-top: 1px solid #d2d3d4;
+  border-bottom: 1px solid #d2d3d4;
+  text-transform: uppercase;
+}
+
+.top-header h1 {margin-top:25px; font-weight:700;}
+.top-container {text-align:justify; padding-top:30px; margin-bottom:60px;}
+
+
+// WHATWEDO
+
+.whatwedo {text-align:left;}
+
+
+// CONTACTS
+ #map-outer {
+            padding: 0px; 
+          background-color:#FFF }
+    #map-container { height: 400px }
+   // @media all and (max-width: 991px) {
+   // #map-outer  { height: 650px }
+   //  }
+.form-horizontal .btn-warning {background-color:rgb(185,93,64); border-color:rgb(185,93,64);}
+
+.contact .row {margin-left:0px; margin-right:0px;}
+
+// FOOTER
+.dark-bg .container {
+  background-color: #2F4052;
+  padding-left:15px;
+  padding-right:15px;
+  box-shadow: 0 10px 50px rgba(0,0,0,0.8);
+}
+footer {
+  font-size: 14px;
+  line-height: 22px;
+}
+footer.dark-bg {
+    color: #A3B1BF;
+
+}
+footer .inner {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+footer .container > .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+footer .row .inner {
+  padding: 25px;
+}
+footer .logo {
+  height: auto;
+  max-height: 100%;
+}
+footer h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-bottom: 15px;
+}
+.footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-menu li {
+    display: inline;
+    padding-left: 10px;
+}
+.footer-menu li:before {
+    display: inline-block;
+    content: "|";
+    color:#fff;
+    padding-right: 12px;
+}
+.footer-menu li:first-child:before {
+    display: none;
+}
+.footer-bottom {
+color:#E3C8B5;
+}
+.footer-bottom .container.inner {
+    padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-bottom a {
+  color:#fff;
+}
+.footer-bottom a:hover {
+color:rgb(185,93,64);
+text-decoration:none;
+}
+.footer-bottom p {
+    padding: 0;
+    margin: 0;
+    color:rgb(243,208,178);
+}
+
+
+/*==========  MOBILE FIRST METHOD  ==========*/
+
+    /*--- Custom, iPhone Retina ---*/ 
+    @media only screen and (min-width : 320px) {
+       
+      .caption-title {font-size:53px;}
+      .caption{bottom:23%;}
+      .top-container, #map-outer.contact-info {padding-left:15px;padding-right:15px; padding-top:40px; padding-bottom:40px;}
+      .top-header h1, .contact .top-header h1 {padding-left:0px;}
+      #address.col-md-4 {padding-left:0px; padding-right:0px;}
+      .input-group[class*="col-"] {padding-left:15px;padding-right:15px;}
+      .form-group .col-md-4, .form-group .col-md-3, .form-group .col-md-7 {padding-top:5px;padding-bottom:5px;}
+
+    }
+
+    /*--- Extra Small Devices, Phones ---*/ 
+    @media only screen and (min-width : 480px) {
+
+      .caption-title {font-size:63px;}
+      .caption{bottom:20%;}
+      .top-header h1, .contact .top-header h1 {padding-left:15px;}
+      .top-container, #map-outer.contact-info {padding-left:35px; padding-right:35px;}
+
+    }
+
+    /*--- Small Devices, Tablets ---*/
+    @media only screen and (min-width : 768px) {
+      .caption-title {font-size:73px;}
+
+    }
+
+    /*--- Medium Devices, Desktops ---*/
+    @media only screen and (min-width : 992px) {
+      .top-header h1 {padding-left:130px;}
+      .contact .top-header h1 {padding-left:35px;}
+      .top-container, #map-outer.contact-info {padding-left:50px; padding-right:50px;}
+
+    }
+
+    /*--- Large Devices, Wide Screens ---*/
+    @media only screen and (min-width : 1200px) {
+      .contact .top-header h1 {padding-left:130px;}
+      #map-outer.contact-info {padding-left:145px; padding-right:145px;}
+
+    }
+    
+/*==========  /MOBILE FIRST METHOD  ==========*/
+
+
+

@@ -1,11 +1,27 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'pages#index'
 
-  get 'background' => 'pages#background'
+  get 'contact' => 'pages#contact'
 
-  get 'what_we_do' => 'pages#what_we_do'
+  get 'about' => 'pages#about'
 
-  get 'contacts' => 'pages#contacts'
+  get 'mission' => 'pages#mission'
+
+  get 'whatwedo' => 'pages#whatwedo'
+
+  get 'privacy' => 'pages#privacy'
+
+  get 'jobs' => 'pages#jobs'
+
+  get 'consulenza-direzionale' => 'pages#consulenza-direzionale'
+
+  get 'm-and-a' => 'pages#m-and-a'
+
+  get 'temporary-management' => 'pages#temporary-management'
+
+  get 'turnaround' => 'pages#turnaround'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

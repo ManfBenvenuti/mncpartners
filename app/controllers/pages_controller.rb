@@ -11,5 +11,17 @@ class PagesController < ApplicationController
 
   def contacts
   end
+
+  def blog
+  end
+
+  def portfolio
+  end
+
+  def index
+  end
+
+  def contact
+  end
   
 end
