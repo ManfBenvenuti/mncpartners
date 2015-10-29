@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   get 'turnaround' => 'pages#turnaround'
 
-
+  get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

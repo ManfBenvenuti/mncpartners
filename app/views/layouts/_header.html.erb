@@ -11,7 +11,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav nav-pills pull-right">
-            <li><a href="/">Home</a></li>
+            <li><%= link_to I18n.t 'hello', root_path %></li>
             <li><a href="about">Chi Siamo</a></li>
             <li role="presentation" class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100" data-close-others="false" href="#" role="button" aria-expanded="false">
@@ -26,6 +26,14 @@
             </li>
             <li><a href="mission">Mission</a></li>
             <li><a href="contact">Contatti</a></li>
+          </ul>
+          <ul class="language-menu pull-right" role="menu">
+            <li>
+              <%= link_to 'IT', change_locale_path(:it) %>
+            </li>
+            <li>
+              <%= link_to 'EN', change_locale_path(:en) %>
+            </li>
           </ul>
         </div>
       </div>
