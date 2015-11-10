@@ -12,6 +12,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="Fatevobis" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,30 +24,6 @@
   ga('send', 'pageview');
 
 </script>
-
-<script type="text/javascript" src="assets/jquery.cuchiebar.js"></script>
-
-<!-- Cookie Bar -->
-<script type="text/javascript">
-      $(document).ready(function(){
-        $.cookieBar({
-          message: 'I cookies ci servono per migliorare la tua esperienza del sito',
-          acceptButton: true,
-          acceptText: 'Ok, ho capito',
-          declineButton: false,
-          declineText: 'Disabilita Cookies',
-          policyButton: true,
-          policyText: 'Privacy Policy',
-          policyURL: '/privacy/',
-          acceptOnScroll: 200,
-          fixed: true,
-          bottom: true,
-          zindex: 1
-        });
-      });
-    </script>
-
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
@@ -68,5 +45,25 @@
 		<%= yield %>
     <%= render 'layouts/footer' %>
 
+    <script type="text/javascript">
+    $(document).ready(function() {  
+      $.cookiesDirective({
+          explicitConsent: false, // false allows implied consent
+          position: 'bottom', // top or bottom of viewport
+          duration: 10, // display time in seconds
+          limit: 1, // limit disclosure appearances, 0 is forever     
+          message: null, // customise the disclosure message              
+          cookieScripts: null, // disclose cookie settings scripts
+          privacyPolicyUri: 'privacy',   // uri of your privacy policy
+          scriptWrapper: function(){}, // wrapper function for cookie setting scripts
+          fontFamily: 'helvetica', // font style for disclosure panel
+          fontColor: '#FFFFFF', // font color for disclosure panel
+          fontSize: '13px', // font size for disclosure panel
+          backgroundColor: '#000000', // background color of disclosure panel
+          backgroundOpacity: '80', // opacity of disclosure panel
+          linkColor: '#CA0000' // link color in disclosure panel
+      });
+    });
+</script>
 	</body>
 </html>
