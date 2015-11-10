@@ -1,7 +1,7 @@
 <section class="contact">
   <div class="container">
     <div class="top-header">
-      <h1>Contatti</h1>
+      <h1><%= I18n.t 'contatti-1'%></h1>
     </div>
     <div class="row">
       <div id="map-outer" class="col-md-12 contact-info">
@@ -9,21 +9,20 @@
           <address>
           <strong>M&C Partners S.r.l.</strong><br>
               Via Borghetto, 3<br>
-              20122<br>
-              Milano<br>
-              Italia<br>
+              20122 Milano<br>
+              <%= I18n.t 'contatti-2'%><br>
               <br/>
-              <strong>Telefono:</strong> +39 02 4547 4900<br/>
+              <strong><%= I18n.t 'contatti-3'%></strong> +39 02 4547 4900<br/>
               <strong>Fax:</strong> +39 02 99986746
          </address>
         </div>
         <form class="form-horizontal" name="commentform">
           <div class="form-group">
               <div class="col-md-4">
-                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nome"/>
+                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Name"/>
               </div>
               <div class="col-md-4">
-                  <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Cognome"/>
+                  <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
               </div>
               <div class="col-md-3 input-group">
               <span class="input-group-addon">@</span>
@@ -39,7 +38,7 @@
             </div>
             <div class="form-group">
               <div class="col-md-6">
-                  <button type="submit" value="Submit" class="btn btn-warning pull-right">Send</button>
+                  <button type="submit" value="Submit" class="btn btn-warning pull-right"><%= I18n.t 'contatti-4'%></button>
               </div>
             </div>
           </form>
