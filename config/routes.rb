@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'contact' => 'pages#contact'
 
+  match '/contact', to: 'static_pages#send_contact', via: 'post'
+
   get 'about' => 'pages#about'
 
   get 'mission' => 'pages#mission'
