@@ -5,8 +5,6 @@ class Contact < MailForm::Base
   attribute :telephone
   attribute :message
 
-  append :telephone
-
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
