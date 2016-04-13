@@ -29,10 +29,9 @@ class PagesController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      redirect_to contact_path, notice: "Grazie per averci scritto!"
+      redirect_to contact_path, alert: "Grazie per averci scritto!"
     else
-      flash.now[:error] = 'Non è stato possibile inviare il messaggio.'
-      render :contact
+      render :contact, alert: 'Non è stato possibile inviare il messaggio.'
     end
   end
 
