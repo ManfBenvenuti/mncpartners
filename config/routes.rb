@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'mission' => 'pages#mission'
 
+  get 'real-estate' => 'pages#real-estate'
+
   get 'whatwedo' => 'pages#whatwedo'
 
   get 'privacy' => 'pages#privacy'
