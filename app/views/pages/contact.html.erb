@@ -36,24 +36,24 @@
       </div> <!-- /row -->
 
       <div class="row">
-        <div id="map-outer" class="col-md-8 col-md-offset-2 contact-info">
+        <div id="map-outer" class="col-md-10 col-md-offset-1 contact-info">
           <%= simple_form_for @contact, :html=> { class: "form-horizontal" }, :url => contact_path, :method => :post do |f| %>
             <div class="form-group">
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <%=  f.input_field :first_name, class: "form-control", label: false, :required => true, placeholder: "Name" %>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <%=  f.input_field :last_name, class: "form-control", label: false, :required => true, placeholder: "Last Name" %>
                 </div>
-                <div class="col-md-3 input-group">
+                <div class="col-md-12 input-group">
                 <span class="input-group-addon">@</span>
                     <%=  f.input_field :email, class: "form-control", label: false, :required => true, :as => :email, placeholder: "Email Address" %>
                 </div>
-                <div class="col-md-3 input-group">
+                <div class="col-md-12 input-group">
                   <span class="input-group-addon">#</span>
                   <%=  f.input_field :telephone, class: "form-control", :as => :tel, label: false,placeholder: "Telephone" %>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-12">
                   <%=  f.input_field :message, class: "form-control", rows: "6", label: false, :as => :text, :required => true, placeholder: "Your question or comment here" %>
                 </div>
               </div>
