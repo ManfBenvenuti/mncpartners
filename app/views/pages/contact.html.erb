@@ -39,10 +39,10 @@
         <div id="map-outer" class="col-md-10 col-md-offset-1 contact-info">
           <%= simple_form_for @contact, :html=> { class: "form-horizontal" }, :url => contact_path, :method => :post do |f| %>
             <div class="form-group">
-                <div class="col-md-12">
+                <div class="col-md-12 input-group">
                   <%=  f.input_field :first_name, class: "form-control", label: false, :required => true, placeholder: "Name" %>
                 </div><br/>
-                <div class="col-md-12">
+                <div class="col-md-12 input-group">
                   <%=  f.input_field :last_name, class: "form-control", label: false, :required => true, placeholder: "Last Name" %>
                 </div><br/>
                 <div class="col-md-12 input-group">
