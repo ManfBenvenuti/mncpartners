@@ -36,7 +36,7 @@
     <div class="row"> <!-- Three columns of text below the carousel -->
       <div class="col-lg-4">
         <img src="assets/competent.svg" alt="Competenza" width="100" height="100">
-        <h2><%= I18n.t 'home-tr-1'%></h2>  
+        <h2><%= I18n.t 'home-tr-1'%></h2>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="assets/professional.svg" alt="Professionalit&agrave;" width="100" height="100">
@@ -60,8 +60,8 @@
     </div>
 </section>
 
-<section class="fun-facts"> 
-  <div class="container">           
+<section class="fun-facts">
+  <div class="container">
     <div class="row">
       <div class="col-md-3 margin20 facts-in">
         <h3><span class="counter">87</span></h3>
@@ -83,8 +83,8 @@
   </div> <!-- /.container -->
 </section>
 
-<section class="whatwedo"> 
-  <div class="container">   
+<section class="whatwedo">
+  <div class="container">
 <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7">
@@ -92,7 +92,7 @@
           <p class="lead"><%= I18n.t 'home-cosa-3'%></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="assets/mea.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="assets/mea.png" alt="M&A">
         </div>
       </div>
       <hr class="featurette-divider">
@@ -102,7 +102,7 @@
           <p class="lead"><%= I18n.t 'home-cosa-6'%></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="assets/turnaround.png" style="margin-top:4%;" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="assets/turnaround.png" style="margin-top:4%;" alt="Turnaround">
         </div>
       </div>
       <hr class="featurette-divider">
@@ -113,7 +113,7 @@
           <%= I18n.t 'home-cosa-9-2'%></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="assets/consulenza.png" style="margin-top:4%;" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="assets/consulenza.png" style="margin-top:4%;" alt="Management Consulting">
         </div>
       </div>
       <hr class="featurette-divider">
@@ -123,7 +123,17 @@
           <p class="lead"><%= I18n.t 'home-cosa-12'%></p><br/>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="assets/temporary.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="assets/temporary.png" alt="Temporary Management">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><%= I18n.t 'home-cosa-13'%> <br/><span class="text-muted subtitle"><%= I18n.t 'home-cosa-14'%></span></h2>
+          <p class="lead"><%= I18n.t 'home-cosa-15-'%>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="assets/real-estate.jpg" style="margin-top:4%;" alt="Real Estate">
         </div>
       </div>
       </div> <!-- /.container -->
@@ -163,9 +173,9 @@
 </script>-->
 
 <!--<script>$(document).ready(function() {
- 
+
   $("#owl-demo").owlCarousel({
- 
+
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
@@ -173,39 +183,39 @@
       autoPlay:true,
       stopOnHover:true,
       pagination:false
- 
+
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
+
   });
- 
-});</script>-->   
+
+});</script>-->
 
 <!-- Parallax function -->
 <script>
 $(document).ready(function(){
    // cache the window object
    $window = $(window);
- 
+
    $('section[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type
      var $scroll = $(this);
-                     
+
       $(window).scroll(function() {
         // HTML5 proves useful for helping with creating JS functions!
-        // also, negative value because we're scrolling upwards                             
-        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-         
+        // also, negative value because we're scrolling upwards
+        var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
         // background position
         var coords = '50% '+ yPos + 'px';
- 
+
         // move the background
-        $scroll.css({ backgroundPosition: coords });    
+        $scroll.css({ backgroundPosition: coords });
       }); // end window scroll
    });  // end section function
 }); // close out script
-</script>   
+</script>
