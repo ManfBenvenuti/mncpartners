@@ -17,13 +17,12 @@
                 <strong>Fax:</strong> +39 02 99986746
            </address>
           </div>
-          <hr class="featurette-divider">
           <div id="address" class="col-md-12">
             <address>
             <strong>M&C Partners LDA</strong><br>
                 Rua Dom Pedro V<br>
                 1250-094 Lisboa<br>
-                <%= I18n.t 'contatti5'%><br>
+                <%= I18n.t 'contatti-5'%><br>
                 <br/>
                 <strong><%= I18n.t 'contatti-3'%></strong> +351 218 000 599<br/>
            </address>
@@ -73,10 +72,10 @@
 <script>
 
   function init_map() {
-var var_location = new google.maps.LatLng(45.472851,9.2044673);
+var var_location_mi = new google.maps.LatLng(45.472851,9.2044673);
 
-     var var_mapoptions = {
-          center: var_location,
+     var var_mapoptions_mi = {
+          center: var_location_mi,
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
@@ -85,15 +84,15 @@ var var_location = new google.maps.LatLng(45.472851,9.2044673);
           streetViewControl: true,
         };
 
-var var_marker = new google.maps.Marker({
-  position: var_location,
-  map: var_map,
+var var_marker_mi = new google.maps.Marker({
+  position: var_location_mi,
+  map: var_map_mi,
   title:"M&C Partners srl"});
 
-    var var_map = new google.maps.Map(document.getElementById("map-container-milano"),
-        var_mapoptions);
+    var var_map_mi = new google.maps.Map(document.getElementById("map-container-milano"),
+        var_mapoptions_mi);
 
-var_marker.setMap(var_map);
+var_marker_mi.setMap(var_map_mi);
 
   }
 
@@ -102,14 +101,13 @@ var_marker.setMap(var_map);
 </script>
 
 <!-- Mappa Lisbona -->
-<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <script>
 
   function init_map() {
-var var_location = new google.maps.LatLng(38.7157451,-9.146235400000023);
+var var_location_li = new google.maps.LatLng(38.7157451,-9.146235400000023);
 
-     var var_mapoptions = {
-          center: var_location,
+     var var_mapoptions_li = {
+          center: var_location_li,
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: true,
@@ -118,15 +116,15 @@ var var_location = new google.maps.LatLng(38.7157451,-9.146235400000023);
           streetViewControl: true,
         };
 
-var var_marker = new google.maps.Marker({
-  position: var_location,
-  map: var_map,
+var var_marker_li = new google.maps.Marker({
+  position: var_location_li,
+  map: var_map_li,
   title:"M&C Partners LDA"});
 
-    var var_map = new google.maps.Map(document.getElementById("map-container-lisboa"),
+    var var_map_li = new google.maps.Map(document.getElementById("map-container-lisboa"),
         var_mapoptions);
 
-var_marker.setMap(var_map);
+var_marker_li.setMap(var_map_li);
 
   }
 
