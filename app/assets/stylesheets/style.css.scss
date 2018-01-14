@@ -21,7 +21,7 @@ h1, h2, h3 {color:rgb(47,64,82);}
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 30px;
-} 
+}
 
 .center-line {
   display: inline-block;
@@ -32,13 +32,13 @@ h1, h2, h3 {color:rgb(47,64,82);}
   margin: auto;
 }
 
-#intro { 
-    background: url(parallax2.jpg) 50% 0% fixed no-repeat; 
-    height: auto;  
-    margin: 0 auto; 
+#intro {
+    background: url(parallax2.jpg) 50% 0% fixed no-repeat;
+    height: auto;
+    margin: 0 auto;
     color:#fff;
-    width: 100%; 
-    position: relative; 
+    width: 100%;
+    position: relative;
     box-shadow: 0 10px 50px rgba(0,0,0,0.8);
     padding: 100px 0;
 }
@@ -46,12 +46,12 @@ h1, h2, h3 {color:rgb(47,64,82);}
 #intro .container {background:none;}
 #intro h2 {color:#fff;}
 
-#home { 
-    background: url(parallax3.jpg) 100% 0% fixed; 
-    height: auto;  
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
+#home {
+    background: url(parallax3.jpg) 100% 0% fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
     box-shadow: 0 10px 50px rgba(0,0,0,0.8);
     padding: 100px 0;
 }
@@ -79,7 +79,7 @@ ul.language-menu {margin-top: 35px; margin-right: 20px;}
 ul.language-menu li {display:inline;}
 .nav {  margin-top: 25px;}
 .nav li {border-radius:none;}
-.nav li > a {color:#434a54;} 
+.nav li > a {color:#434a54;}
 .nav li > a:hover {background:#fff; color:rgb(185,93,64); }
 .nav li.dropdown > a:hover, .nav .open > a {background:#fff; color:rgb(185,93,64); }
 
@@ -141,7 +141,7 @@ a {color: rgb(42,45,51);}
 
 // CONTACTS
  #map-outer {
-            padding: 0px; 
+            padding: 0px;
           background-color:#FFF }
     #map-container { height: 400px }
    // @media all and (max-width: 991px) {
@@ -150,6 +150,12 @@ a {color: rgb(42,45,51);}
 .form-horizontal .btn-warning {background-color:rgb(185,93,64); border-color:rgb(185,93,64);}
 
 .contact .row {margin-left:0px; margin-right:0px;}
+
+.address-pt {border-top:1px solid #2F4052;}
+
+.contact-pt {margin-top:20px;}
+
+
 
 // FOOTER
 .dark-bg .container {
@@ -229,9 +235,9 @@ text-decoration:none;
 
 /*==========  MOBILE FIRST METHOD  ==========*/
 
-    /*--- Custom, iPhone Retina ---*/ 
+    /*--- Custom, iPhone Retina ---*/
     @media only screen and (min-width : 320px) {
-       
+
       .caption-title {font-size:26px;}
       .caption{bottom:23%;}
       .top-container, #map-outer.contact-info {padding-left:15px;padding-right:15px; padding-top:40px; padding-bottom:40px;}
@@ -241,7 +247,7 @@ text-decoration:none;
       .form-group .col-md-4, .form-group .col-md-3, .form-group .col-md-7 {padding-top:5px;padding-bottom:5px;}
     }
 
-    /*--- Extra Small Devices, Phones ---*/ 
+    /*--- Extra Small Devices, Phones ---*/
     @media only screen and (min-width : 480px) {
 
       .caption-title {font-size:43px;}
@@ -269,8 +275,5 @@ text-decoration:none;
       #map-outer.contact-info {padding-left:145px; padding-right:145px;}
 
     }
-    
+
 /*==========  /MOBILE FIRST METHOD  ==========*/
-
-
-
