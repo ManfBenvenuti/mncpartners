@@ -19,7 +19,7 @@
           <div id="map-canvas-right" class="col-md-6">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.0897110606834!2d-9.148424084686894!3d38.71574926523603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19337f7985ba11%3A0x19c0044f8d303119!2sR.+Dom+Pedro+V%2C+1250-096+Lisboa%2C+Portogallo!5e0!3m2!1sit!2sit!4v1515929179918" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-          <div id="address" style="border-top:1px solid #2F4052;" class="col-md-6">
+          <div id="address" class="col-md-6">
             <address style="margin-top:20px;">
             <strong>M&C Partners LDA</strong><br>
                 Rua Dom Pedro V<br>
@@ -36,32 +36,34 @@
       </div> <!-- /row -->
 
       <div class="row">
-        <%= simple_form_for @contact, :html=> { class: "form-horizontal" }, :url => contact_path, :method => :post do |f| %>
-          <div class="form-group">
-              <div class="col-md-4">
-                <%=  f.input_field :first_name, class: "form-control", label: false, :required => true, placeholder: "Name" %>
-              </div>
-              <div class="col-md-4">
-                <%=  f.input_field :last_name, class: "form-control", label: false, :required => true, placeholder: "Last Name" %>
-              </div>
-              <div class="col-md-3 input-group">
-              <span class="input-group-addon">@</span>
-                  <%=  f.input_field :email, class: "form-control", label: false, :required => true, :as => :email, placeholder: "Email Address" %>
-              </div>
-              <div class="col-md-3 input-group">
-                <span class="input-group-addon">#</span>
-                <%=  f.input_field :telephone, class: "form-control", :as => :tel, label: false,placeholder: "Telephone" %>
-              </div>
-              <div class="col-md-7">
-                <%=  f.input_field :message, class: "form-control", rows: "6", label: false, :as => :text, :required => true, placeholder: "Your question or comment here" %>
-              </div>
-            </div>
+        <div id="map-outer" class="col-md-8 col-md-offset-2 contact-info">
+          <%= simple_form_for @contact, :html=> { class: "form-horizontal" }, :url => contact_path, :method => :post do |f| %>
             <div class="form-group">
-              <div class="col-md-6">
-                <%=  f.button :submit, t("contatti-4"), :class=> "btn btn-warning pull-right"%>
+                <div class="col-md-4">
+                  <%=  f.input_field :first_name, class: "form-control", label: false, :required => true, placeholder: "Name" %>
+                </div>
+                <div class="col-md-4">
+                  <%=  f.input_field :last_name, class: "form-control", label: false, :required => true, placeholder: "Last Name" %>
+                </div>
+                <div class="col-md-3 input-group">
+                <span class="input-group-addon">@</span>
+                    <%=  f.input_field :email, class: "form-control", label: false, :required => true, :as => :email, placeholder: "Email Address" %>
+                </div>
+                <div class="col-md-3 input-group">
+                  <span class="input-group-addon">#</span>
+                  <%=  f.input_field :telephone, class: "form-control", :as => :tel, label: false,placeholder: "Telephone" %>
+                </div>
+                <div class="col-md-7">
+                  <%=  f.input_field :message, class: "form-control", rows: "6", label: false, :as => :text, :required => true, placeholder: "Your question or comment here" %>
+                </div>
               </div>
-            </div>
-          <% end %>
+              <div class="form-group">
+                <div class="col-md-6">
+                  <%=  f.button :submit, t("contatti-4"), :class=> "btn btn-warning pull-right"%>
+                </div>
+              </div>
+            <% end %>
+          </div>
       </div> <!-- /row -->
     </div> <!-- /row -->
   </div> <!-- /container -->
