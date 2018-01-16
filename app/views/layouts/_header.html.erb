@@ -14,16 +14,16 @@
             <li><a href="/"><%= I18n.t 'head-home'%></a></li>
             <li><a href="about"><%= I18n.t 'head-about'%></a></li>
             <li><a href="mission"><%= I18n.t 'head-mission'%></a></li>
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="100" data-close-others="false" href="#" role="button" aria-expanded="false">
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="cosa-facciamo-dropdown" data-toggle="dropdown" data-hover="dropdown" href="#" type="button" aria-expanded="false">
                 <%= I18n.t 'head-cosa'%> <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" aria-labelledby="cosa-facciamo-dropdown">
                <li><a href="m-and-a"><%= I18n.t 'head-cosa-1'%></a>
                <li><a href="turnaround"><%= I18n.t 'head-cosa-2'%></a>
                <li><a href="consulenza-direzionale"><%= I18n.t 'head-cosa-3'%></a>
                <li><a href="temporary-management"><%= I18n.t 'head-cosa-4'%></a>
-                <li><a href="real-estate"><%= I18n.t 'head-cosa-5'%></a> 
+                <li><a href="real-estate"><%= I18n.t 'head-cosa-5'%></a>
               </ul>
             </li>
             <li><a href="contact"><%= I18n.t 'head-contatti'%></a></li>
